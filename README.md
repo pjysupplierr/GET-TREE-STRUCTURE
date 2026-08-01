@@ -1,4 +1,9 @@
 #  Witch_Tree_Craft
+<img width="587" height="287" alt="Screenshot 2026-08-01 222134" src="https://github.com/user-attachments/assets/0f1595ac-b356-480c-80b4-4ee28685acd9" />
+    <img width="569" height="289" alt="Screenshot 2026-08-01 222146" src="https://github.com/user-attachments/assets/dd3c42e9-655e-4c91-85cb-b6a91bc240cc" />
+    <img width="590" height="290" alt="Screenshot 2026-08-01 222231" src="https://github.com/user-attachments/assets/6e5a56ec-3303-4414-8641-8d452012c1ac" />
+
+
 
 > **Crafted by PJY**  
 > Transform folder structures into stunning, interactive visual trees!
@@ -64,9 +69,5 @@ option 1  --> python desktop_app.py
 option 2  --> python app.py
 
 
-<img width="587" height="287" alt="Screenshot 2026-08-01 222134" src="https://github.com/user-attachments/assets/0f1595ac-b356-480c-80b4-4ee28685acd9" />
-<img width="569" height="289" alt="Screenshot 2026-08-01 222146" src="https://github.com/user-attachments/assets/dd3c42e9-655e-4c91-85cb-b6a91bc240cc" />
-<img width="590" height="290" alt="Screenshot 2026-08-01 222231" src="https://github.com/user-attachments/assets/6e5a56ec-3303-4414-8641-8d452012c1ac" />
-
-
+    
 If you found this project helpful, please consider giving it a ⭐ on GitHub!
