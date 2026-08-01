@@ -62,3 +62,5 @@ pip install -r requirements.txt
 
 option 1  --> python desktop_app.py
 option 2  --> python app.py
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub!
