@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Witch_Tree_Craft | crafted by PJY</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>Witch_Tree_Craft</h1>
+            <p class="subtitle">crafted by PJY</p>
+        </header>
+
+        <!-- Controls Panel -->
+        <div class="controls-panel">
+            <div class="control-group">
+                <label>Theme:</label>
+                <select id="themeSelect">
+                    <option value="neon_dark">Neon Dark</option>
+                    <option value="ocean_breeze">Ocean Breeze</option>
+                    <option value="sunset_glow">Sunset Glow</option>
+                    <option value="forest_green">Forest Green</option>
+                    <option value="cyberpunk">Cyberpunk</option>
+                    <option value="minimal_light">Minimal Light</option>
+                    <option value="dracula">Dracula</option>
+                    <option value="nord">Nord</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Depth:</label>
+                <input type="range" id="depthRange" min="1" max="50" value="50">
+                <span id="depthValue">Full (50)</span>
+            </div>
+
+            <button id="exportBtn" class="btn-export">Export as Image</button>
+            <button id="copyBtn" class="btn-copy">📋 Copy as Text</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Input Panel -->
+            <div class="input-panel">
+                <div class="panel-header">
+                    <h2>Input</h2>
+                    <div class="input-tabs">
+                        <button class="tab-btn active" data-tab="text">Text Tree</button>
+                        <button class="tab-btn" data-tab="json">JSON</button>
+                        <button class="tab-btn" data-tab="upload">Upload</button>
+                    </div>
+                </div>
+
+                <div class="tab-content active" id="textTab">
+                    <textarea id="treeInput" placeholder="Paste your tree structure here...
+
+Example:
+my-project/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   └── Footer.jsx
+│   ├── utils/
+│   │   └── helpers.js
+│   └── App.jsx
+├── public/
+│   └── index.html
+├── package.json
+└── README.md"></textarea>
+                </div>
+
+                <div class="tab-content" id="jsonTab">
+                    <textarea id="jsonInput" placeholder='{"name": "my-project", "isFolder": true, "children": [...]}'></textarea>
+                </div>
+
+                <div class="tab-content" id="uploadTab">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon" style="font-size: 2.8rem; margin-bottom: 8px;">📁</div>
+                        <p style="font-size: 1.05rem; font-weight: 600; margin-bottom: 4px;">Drag &amp; Drop a Folder or File</p>
+                        <p class="subtitle" style="font-size: 0.85rem;">or click anywhere to browse from computer</p>
+                        <input type="file" id="fileInput" webkitdirectory directory multiple style="display:none;">
+                    </div>
+                </div>
+
+                <button id="visualizeBtn" class="btn-visualize">Visualize</button>
+            </div>
+
+            <!-- Output Panel -->
+            <div class="output-panel">
+                <div class="panel-header">
+                    <h2>Output</h2>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="tree">Tree</button>
+                        <button class="view-btn" data-view="graph">Graph</button>
+                        <button class="view-btn" data-view="mindmap">Mind Map</button>
+                    </div>
+                </div>
+
+                <div class="tree-container" id="treeContainer">
+                    <div class="empty-state">
+                        <p>👈 Enter a tree structure or drop a folder and click Visualize!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar" id="statsBar" style="display: none;">
+            <span>📁 Folders: <strong id="folderCount">0</strong></span>
+            <span>📄 Files: <strong id="fileCount">0</strong></span>
+            <span>📏 Depth: <strong id="maxDepth">0</strong></span>
+            <span>📦 Total Items: <strong id="totalItems">0</strong></span>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer" style="text-align: center; margin-top: 30px; padding: 15px; color: var(--text-secondary); font-size: 0.85rem;">
+            <p><strong>Witch_Tree_Craft</strong> &bull; crafted by PJY</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
