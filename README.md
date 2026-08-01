@@ -1,60 +1,64 @@
-# ✨ Witch_Tree_Craft
+#  Witch_Tree_Craft
 
-> **crafted by PJY**
+> **Crafted by PJY**  
+> Transform folder structures into stunning, interactive visual trees!
 
-Transform folder structures into stunning visual trees!
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Backend-lightgrey?logo=flask)](https://flask.palletsprojects.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-## ✨ Features
+---
 
-- 🎨 **8 Themes** — Neon Dark, Ocean Breeze, Sunset Glow, Cyberpunk, Forest Green, Minimal Light, Dracula, Nord
-- 📐 **Multiple Views** — Classic Tree, Horizontal Graph, Mind Map
-- 📥 **Export as Image** — Save your tree visualization directly as high-resolution PNG
-- 📋 **Copy as Text** — Copy formatted ASCII tree for documentation/README files
-- 📁 **Folder Drag & Drop** — Drag & drop any folder or file directly into the browser
-- 🌐 **Web & Desktop Interface** — Real-time interactive UI
+## 📖 Overview
 
-## 🚀 Quick Start
+**Witch_Tree_Craft** is a powerful and beautiful directory visualization tool. Whether you are documenting a codebase, organizing project files, or just love aesthetic representations of your folder structures, this tool converts any directory into an interactive, themeable visual tree instantly.
 
-### Web App
-```bash
-pip install -r requirements.txt
-python app.py
-```
-Open **`http://localhost:5000`** in your browser.
+---
 
-### Standalone Desktop App
-```bash
-python desktop_app.py
-```
+##  Features
 
-## 📁 Clean Repository Structure
+-  **8 Beautiful Themes**: Neon Dark, Ocean Breeze, Sunset Glow, Cyberpunk, Forest Green, Minimal Light, Dracula, and Nord.
+-  **Multiple Views**: Switch seamlessly between Classic Tree, Horizontal Graph, and Mind Map layouts.
+-  **Export as Image**: Save your tree visualization directly as a high-resolution PNG.
+-  **Copy as Text**: Instantly copy formatted ASCII/Unicode tree structures for your `README.md` or documentation.
+-  **Drag & Drop**: Drag and drop any folder or file directly into the browser for instant visualization.
+-  **Cross-Platform**: Available as a real-time interactive Web App and a Standalone Desktop App.
 
-```
-Witch_Tree_Craft/
-├── beautiful_tree_visualizer/
-│   ├── app.py              # Flask server engine
-│   ├── cli.py              # Console runner script
-│   ├── tree_parser.py      # Directory & text tree parser
-│   ├── themes.py           # Color theme definitions
-│   ├── image_exporter.py   # High-res PNG exporter
-│   └── templates/
-│       ├── index.html      # Clean Web UI
-│       ├── style.css       # Modern design system
-│       └── script.js       # Interactive frontend & drag-drop logic
-├── desktop_app.py          # Native desktop app launcher
-├── app.py                  # Web application entry point
-├── requirements.txt
-├── .gitignore              # Standard GitHub ignore rules
-└── README.md
-```
+---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla ES6+)
 - **Backend**: Python, Flask
 - **Image Generation**: Pillow (PIL)
-- **Desktop**: PyWebView
+- **Desktop Wrapper**: PyWebView
 
-## 📄 License
+---
 
-crafted by PJY — MIT License - Feel free to use and modify!
+##  Quick Start
+
+### 1️ Prerequisites
+Ensure you have the following installed on your system:
+- [Python 3.8 or higher](https://www.python.org/downloads/)
+- `pip` (Python package installer)
+
+### 2️ Installation
+
+**Step 1:** Clone the repository
+```bash
+git clone https://github.com/uyg7x/Witch_Tree_Craft.git
+cd Witch_Tree_Craft
+
+# On Windows
+python -m venv venv
+venv\Scripts\activate
+
+# On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+option 1  --> python desktop_app.py
+option 2  --> python app.py
